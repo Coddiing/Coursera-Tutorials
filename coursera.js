@@ -42,6 +42,7 @@
  * 
  * npm init
  * 
+ * npm audit fix // Fix vulnurability
  * 
  * alias npp='notepad++ -multiInst -nosession'
  * 
@@ -76,4 +77,10 @@ v1.3
 v1.4
 $ git tag v1.4-lw
 $ git tag
+* git remote -v // Show online/remote github
+
+npm install bootstrap@4.0.0 --save
+npm install jquery@3.3.1 popper.js@1.12.9 --save
+
+npm start // Starts lite server
  */
