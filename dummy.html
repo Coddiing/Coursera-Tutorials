@@ -93,7 +93,7 @@
             </div>
             <div class="col col-sm col-md" >
                 <div class = "row row-content align-items-center" >
-                    <div  class="col col-sm-10" >
+                    <div  class="col col-sm-7" >
                         <h2 >Weekend Grand Buffet  <span class="badge badge-danger">NEW</span></h2>
                         <p>Featuring mouthwatering combinations with a choice of five different salads,
                              six enticing appetizers, six main entrees and five choicest desserts. Free flowing
@@ -128,70 +128,61 @@
         </div>
 
         
-            <div class="col-sm col-sm-8" id="reserve" >
+            <div class="col-sm col-sm-7" id="reserve" >
                 <div class="card" >
                     <h3 class="card-header bg-warning text-white" >Reserve a Table</h3>
                     <div class="card-body" >
-                        <div class="col-12 col-sm-8" >
+                        <dl class="row" >
+                            <dt class="col-6" >Number of guests</dt>          
+                            <dd class="col-6" >
 
-                            <div class="row" >
-                            
-                                <div class="col-12 col-sm-4" >Number of guests</div>          
-                                <div class="col-12 col-sm-8" >
-    
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                        <label class="form-check-label" for="inlineRadio1">1</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"
+                                     >
+                                    <label class="form-check-label" for="inlineRadio3">3 </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"
+                                     >
+                                    <label class="form-check-label" for="inlineRadio3">4 </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"
+                                     >
+                                    <label class="form-check-label" for="inlineRadio3">5 </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"
+                                     >
+                                    <label class="form-check-label" for="inlineRadio3">6 </label>
+                                </div>
+
+                            </dd>    
+                            <dt class="col-6" >Date and Time</dt>          
+                            <dd class="col-6">
+                                <div class="form-group row" >
+                                    <div class="col-5 col-md-5" >
+                                        <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Date">
                                     </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                        <label class="form-check-label" for="inlineRadio2">2</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"
-                                         >
-                                        <label class="form-check-label" for="inlineRadio3">3 </label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"
-                                         >
-                                        <label class="form-check-label" for="inlineRadio3">4 </label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"
-                                         >
-                                        <label class="form-check-label" for="inlineRadio3">5 </label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"
-                                         >
-                                        <label class="form-check-label" for="inlineRadio3">6 </label>
-                                    </div>
-    
-                                </div>  
-                            </div>
-                            <div class="row" >
-                                <div class="col-12 col-xs-4 col-sm-4" >Date and Time</div>          
-                                <div class="col-12 col-xs-8 col-sm-8">
-                                    <div class="form-group row" >
-                                        <div class="col-12 col-sm-6 " >
-                                            <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Date">
-                                        </div>
-                                        <div class="col-12 col-sm-6 ">
-                                            <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Time">
-                                        </div>
+                                    <div class="col-7 col-md-5">
+                                        <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Time">
                                     </div>
                                 </div>
-                               
-                            </div>
-
+                            </dd>
                             <div class="form-group row">
                                 <div class="offset-md-2 col-md-10">
                                     <button type="submit" class="btn btn-primary">Reserve</button>
                                 </div>
                             </div>
-                        </div>
-                        
+                        </dl>
                                 
                     </div>
                 </div>
