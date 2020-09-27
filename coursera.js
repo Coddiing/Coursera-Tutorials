@@ -85,6 +85,11 @@ npm install jquery@3.3.1 popper.js@1.12.9 --save
 npm start // Starts lite server
 
 npm install font-awesome@4.7.0 --save
+ http://fontawesome.io/ 
 
 npm install bootstrap-social@5.1.1 --save // social icons
+https://lipis.github.io/bootstrap-social/
+
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
  */
