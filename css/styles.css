@@ -7,6 +7,17 @@ body{
      background-color: #512DA8;
 }
 
+.non-smoking-div
+{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.inner-div-button
+{
+    position: relative;
+    left: 1em;
+}
 
 .row-header
 {

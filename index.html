@@ -27,12 +27,10 @@
                     <li class="nav-item"><a class="nav-link" href="contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul> 
                 <span class="navbar-text">
-                    <a data-toggle="modal"
-                        data-target="#loginModal">
-                        <span class="fa fa-sign-in">
-
-                        </span>Login
-                    </a>
+                    <!--<a data-toggle="modal"
+                        data-target="#loginModal"> -->
+                        <span class="fa fa-sign-in"></span>Login
+                    <!-- </a> -->
                 </span>
             </div>           
         </div>
@@ -47,17 +45,21 @@
             <div class="modal-dialog modal-lg"
                     role="content" >
                 <div class="modal-content">
+
                     <div class="modal-header">
                         <h4 class="modal-title">
-                            Login
+                            Reserve a Table
                         </h4>
                         <button type="button"   
                             class="close" 
                             data-dismiss="modal">
                         &times;</button>    
                     </div>
+
+
                     <div class="modal-body">
                         <form>
+                            <!--
                             <div class="form-row">
                                 <div class="form-group col-sm-4">
                                         <label class="sr-only" for="exampleInputEmail3">Email address</label>
@@ -78,6 +80,94 @@
                             <div class="form-row">
                                 <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
                                 <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>        
+                            </div>
+
+                        -->
+                            <div class="card-body" >
+                                <div class="col-12 col-sm-8" >
+        
+                                    <div class="row" >
+                                    
+                                        <div class="col-12 col-sm-4" >Number of guests</div>          
+                                        <div class="col-12 col-sm-8" >
+            
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">1</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">2</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"
+                                                 checked>
+                                                <label class="form-check-label" for="inlineRadio3">3 </label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"
+                                                 >
+                                                <label class="form-check-label" for="inlineRadio3">4 </label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"
+                                                 >
+                                                <label class="form-check-label" for="inlineRadio3">5 </label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"
+                                                 >
+                                                <label class="form-check-label" for="inlineRadio3">6 </label>
+                                            </div>
+            
+                                        </div>  
+                                    </div>
+                                    
+                                    <div class="row non-smoking-div" >
+                                        <label class="col-12 col-xs-4 col-sm-4" >Section</label>          
+                                        <div class="col-12 col-xs-8 col-sm-8">
+                                            <div class="form-group row "  >
+                                                <div class="btn-group inner-div-button" role="group" aria-label="Basic example">
+                                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                                        <label class="btn btn-success active">
+                                                          <input type="radio" name="options" id="option1" autocomplete="off" checked> Non-smoking
+                                                        </label>
+                                                        <label class="btn btn-danger">
+                                                          <input type="radio" name="options" id="option2" autocomplete="off"> Smoking
+                                                        </label>
+                                                       
+                                                      </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+
+                                    <div class="row" >
+                                        <div class="col-12 col-xs-4 col-sm-4" >Date and Time</div>          
+                                        <div class="col-12 col-xs-8 col-sm-8">
+                                            <div class="form-group row" >
+                                                <div class="col-12 col-sm-6 " >
+                                                    <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Date">
+                                                </div>
+                                                <div class="col-12 col-sm-6 ">
+                                                    <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Time">
+                                                </div>
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+        
+                                    <div class="form-group row">
+                                        <div class="offset-md-2 col-md-10">
+                                            <button type="button" class="btn btn-secondary" 
+                                            data-dismiss="modal">Cancel</button>
+                                            <button type="submit" class="btn btn-primary">Reserve</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                        
                             </div>
                         </form>
                     </div>
@@ -102,6 +192,7 @@
                 <div class="col-12 col-sm align-self-center">
                     <div class="form-group row">
                         <div class="offset-md-2 col-md-10">
+                        <!--    
                             <a href="#reserve" role="button" 
                             class="btn btn-block nav-link btn-warning"
                                 data-toggle="tooltip"
@@ -109,8 +200,12 @@
                                 title="Or Call us at <br /><strong>+85212345678</strong>"
                                 data-placement="bottom"
                             >
+                        -->
+                        <a data-toggle="modal"
+                        data-target="#loginModal">
                             <button type="submit" class="btn btn-warning">Reserve Table</button>
-                            </a>    
+                            </a>
+                           <!-- </a>   -->    
                         </div>
                     </div>
                 </div>
@@ -167,7 +262,8 @@
                             <div class="carousel-caption d-none d-md-block">
                                 <h2>Alberto Somayya</h2>
                                 <h4>Executive Chef</h4>
-                                <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide
+                                <p class="d-none d-sm-block">
+                                    Award winning three-star Michelin chef with wide
                                     International experience having worked closely with
                                     whos-who in the culinary world, he specializes in
                                     creating mouthwatering Indo-Italian fusion experiences.
@@ -265,15 +361,13 @@
             </div>
         </div>
 
-        
+        <!--
             <div class="col-sm col-sm-8" id="reserve" >
                 <div class="card" >
                     <h3 class="card-header bg-warning text-white" >Reserve a Table</h3>
                     <div class="card-body" >
                         <div class="col-12 col-sm-8" >
-
                             <div class="row" >
-                            
                                 <div class="col-12 col-sm-4" >Number of guests</div>          
                                 <div class="col-12 col-sm-8" >
     
@@ -332,8 +426,11 @@
                         
                                 
                     </div>
+
                 </div>
             </div>
+
+        -->
     </div>
 
 
@@ -388,9 +485,11 @@
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
         <script>
+            /*
             $( document ).ready( function ( ) {
                 $( '[data-toggle="tooltip"]' ).tooltip();
             } )
+            */
         </script>
 </body>
 
