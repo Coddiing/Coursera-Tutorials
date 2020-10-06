@@ -92,4 +92,7 @@ https://lipis.github.io/bootstrap-social/
 
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
- */
+ 
+ npm install -g less@2.7.2 // install less file
+ $ lessc css/styles.less styles.css // start less
+    */
