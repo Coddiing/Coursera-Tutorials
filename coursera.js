@@ -95,4 +95,6 @@ https://lipis.github.io/bootstrap-social/
  
  npm install -g less@2.7.2 // install less file
  $ lessc css/styles.less styles.css // start less
+
+ $ npm install --save-dev node-sass@4.7.2 // Install Sass
     */
