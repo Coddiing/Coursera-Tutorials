@@ -2,6 +2,7 @@ $lt-gray: #ddd;
 $background-dark: #512DA8;
 $background-light: #9575CD;
 $background-pale: #D1CAE9;
+$floralwhite: floralwhite;
 
 // Height variables
 $carousel-item-height: 300px;
@@ -74,3 +75,29 @@ body
     bottom: 0px;
     z-index: 1;
 }
+
+
+// ASSIGNMENT STARTS HERE
+#headerTitleParent
+{
+    background-color: $background-dark;
+}
+#headerTitleParent
+{
+    color: $floralwhite;
+}
+
+#closButton
+{
+    color: $floralwhite;
+}
+
+#modalParent
+{
+    background-color: $background-pale;
+}
+
+
+
+
+

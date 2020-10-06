@@ -61,4 +61,20 @@ body {
   bottom: 0px;
   z-index: 1;
 }
+
+#headerTitleParent {
+  background-color: #512DA8;
+}
+
+#headerTitleParent {
+  color: floralwhite;
+}
+
+#closButton {
+  color: floralwhite;
+}
+
+#modalParent {
+  background-color: #D1CAE9;
+}
 /*# sourceMappingURL=styles.css.map */
