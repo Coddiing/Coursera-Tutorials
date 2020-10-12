@@ -9,6 +9,7 @@
  * 
  * git log --oneline
  * 
+ * hello
  * 
  * To check out the index.html from the second commit, find the number of
  *  the second commit using the git log, and then type the following at the prompt:
@@ -97,4 +98,29 @@ https://lipis.github.io/bootstrap-social/
  $ lessc css/styles.less styles.css // start less
 
  $ npm install --save-dev node-sass@4.7.2 // Install Sass
-    */
+
+ git branch -v -a // See all remote branches
+  git config --global --edit // Call editor to manually edit global var
+
+
+
+
+  #################### For manglin scripts ####################
+ npm install --save-dev rimraf@2.6.2 // Helps clean folder
+   npm -g install copyfiles@2.0.0 // Helps copy file from one folder to another
+
+   npm install -g imagemin-cli@3.0.0 --unsafe-perm=true --allow-root // Helps compress images
+  
+  
+   npm install --save-dev usemin-cli@0.5.1 cssmin@0.4.3 uglifyjs@2.4.11 htmlmin@0.0.7 // compres and uglify css and js
+  ######################## Mangle stops #########################
+
+  ############## GRUNT INSTALLATION ###########
+   npm install -g grunt-cli@1.2.0 // Helps us use grunt
+   npm install grunt@1.0.2 --save-dev // Set up grunt locally
+npm install --save-dev grunt-sass@2.1.0 // Grunt to convert scss to css
+npm install --save-dev time-grunt@1.4.0 jit-grunt@0.10.0  // Use time stamp and push necessar grunt dependencies into file
+$ npm install --save-dev grunt-contrib-watch@1.0.0 // Grunt watch to watch for changes
+$ npm install --savwe-dev grunt-browser-sync@2.2.0 // Server files from our project to browser
+   ############# END GRUNT #########################
+  */
