@@ -122,5 +122,37 @@ npm install --save-dev grunt-sass@2.1.0 // Grunt to convert scss to css
 npm install --save-dev time-grunt@1.4.0 jit-grunt@0.10.0  // Use time stamp and push necessar grunt dependencies into file
 $ npm install --save-dev grunt-contrib-watch@1.0.0 // Grunt watch to watch for changes
 $ npm install --savwe-dev grunt-browser-sync@2.2.0 // Server files from our project to browser
+
+$ npm install --save-dev grunt-contrib-copy@1.0.0 grunt-contrib-clean@1.1.0 // Allows us copy and clean folders
+$ npm install --save-dev grunt-contrib-imagemin@2.0.1 // for compressing images
+
+
+ npm install grunt-contrib-concat@1.0.1 --save-dev
+ npm install grunt-contrib-cssmin@2.2.1 --save-dev
+ npm install grunt-contrib-htmlmin@2.4.0 --save-dev
+ npm install grunt-contrib-uglify@3.3.0 --save-dev
+ npm install grunt-filerev@2.3.1 --save-dev
+ npm install grunt-usemin@3.1.1 --save-de
+
+ grunt biuld --force /7 builds dist folder
    ############# END GRUNT #########################
-  */
+
+   
+
+   ######################## GULP #########################
+
+     npm install -g gulp-cli@2.0.1 // installs gulp
+     npm install gulp@3.9.1 --save-dev // Install gulp locally
+
+     npm install gulp-sass@3.1.0  // For sass
+     npm browser-sync@2.23.6 --save-dev // For browser sync to config both one after another.
+
+   ######################### END GULP #########################
+
+
+   Check update of all dependecies in package.json and prompt for update
+   $ npm i -g npm-check-updates
+   $ ncu -u
+
+   $ npm outdated // Show outdated dependencies
+*/
