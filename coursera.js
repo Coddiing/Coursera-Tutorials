@@ -29,6 +29,17 @@
  * 
  * git pull --rebase origin master
  * 
+ * $ git clone -b feature/Bewerberliste https://gitea.sensin.eu/STZSensIn/Online-Application.git // Clone a particular branch
+ * 
+ * $ git merge origin/feature/Bewerberliste  --allow-unrelated-histories /7 Allow unrelated history
+ * 
+ *  git rebase --abort // Undo rebase
+ * 
+ * $ git push --force --set-upstream origin master:programming // Force push to another branch
+ * 
+ * $ git ls-tree --name-only -r master // See files on a branch
+ * git log --name-status
+ * 
  *  git push -u origin master
  * 
  * git remote add origin <repository URL>
@@ -80,9 +91,14 @@ $ git tag v1.4-lw
 $ git tag
 * git remote -v // Show online/remote github
 
+git checkout -- index.html // unstage
+
+git rm --cached <filename> // unstage
+
 npm install bootstrap@4.0.0 --save
 npm install jquery@3.3.1 popper.js@1.12.9 --save
 
+npm install lite-server --save-dev
 npm start // Starts lite server
 
 npm install font-awesome@4.7.0 --save
@@ -106,8 +122,10 @@ https://lipis.github.io/bootstrap-social/
 
 
   #################### For manglin scripts ####################
- npm install --save-dev rimraf@2.6.2 // Helps clean folder
-   npm -g install copyfiles@2.0.0 // Helps copy file from one folder to another
+  npm install --save-dev onchange@3.3.0 parallelshell@3.0.2 // watching sass not for mangling
+  
+ npm install --save-dev rimraf@2.6.2 // Helps clean folder dist
+   npm -g install copyfiles@2.0.0 // Helps copy font file from one folder to another
 
    npm install -g imagemin-cli@3.0.0 --unsafe-perm=true --allow-root // Helps compress images
   
@@ -132,9 +150,10 @@ $ npm install --save-dev grunt-contrib-imagemin@2.0.1 // for compressing images
  npm install grunt-contrib-htmlmin@2.4.0 --save-dev
  npm install grunt-contrib-uglify@3.3.0 --save-dev
  npm install grunt-filerev@2.3.1 --save-dev
- npm install grunt-usemin@3.1.1 --save-de
+ npm install grunt-usemin@3.1.1 --save-dev
 
- grunt biuld --force /7 builds dist folder
+npm install grunt-contrib-compass --save-dev /7 For error correction
+ grunt build --force // builds dist folder
    ############# END GRUNT #########################
 
    
@@ -155,4 +174,50 @@ $ npm install --save-dev grunt-contrib-imagemin@2.0.1 // for compressing images
    $ ncu -u
 
    $ npm outdated // Show outdated dependencies
+   
+   $ npm i gh-pages // Creating gh-pages from terminal
+   
+   $ git push origin --delete feature/login delete remote branch
+   
+   $ git branch -d feature/login // delete local branch
+   
+   $ yarn add font-awesome@4.7.0 // yarn add font
+   $ yarn add bootstrap-social@5.1.1
+   $ yarn add react-router-dom@4.2.2 // Integerates react router
+   
+   $ yarn global add create-react-app@1.5.2
+   
+   $ create-react-app confusion
+   
+   $ yarn start
+   
+   $ git commit --amend -m "Update roles for netlify-cms git gateway"
+   $ git commit -m "Subject" -m "Description..."
+   
+   
+   ##### REDUX #########################
+   
+   $ yarn add redux@3.7.2
+   $ yarn add react-redux@5.0.7
+   $ yarn add react-redux-form@1.16.8
+   # npm install --save redux // To install also React library.
+   
+   $ npm install --save redux react-redux
+   
+   ###########################################
+   ####################
+   
+   $ git checkout otherbranch myfile.txt // Pull in a branch from dest to current branch
+   $ git reset --soft HEAD~1 // Undo a commit
+   $ git reset --hard HEAD~1 // Destructive!!!! Takes you to last commit.
+   $ git revert HEAD // Restes your head
+   $ git reset --merge ORIG_HEAD
+   
+   ################# Redux Thunk ################
+   
+   $ yarn add redux-thunk@2.2.0
+   $ yarn add redux-logger@3.0.6
+   
+   
+   ##################### End Thunk ##################
 */

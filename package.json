@@ -4,8 +4,9 @@
   "description": "This is a website for Ristorante Con Fusion",
   "main": "index.html",
   "scripts": {
-    "start": "npm run lite",
+    "shoot": "npm run lite",
     "go": "npm run watch:all",
+    "start": "npm run watch:scss",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server",
     "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
