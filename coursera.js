@@ -244,7 +244,7 @@ npm install grunt-contrib-compass --save-dev /7 For error correction
 
   $ git push origin --mirror // This pushes all locals including remotes to remote
 
-  ##################### Vue #####################
+  ##################### Vue 2 #####################
 
   $ npm install --global vue-cli // Set up Vue
   $ vue init webpack-simple myproject // creat project
@@ -252,6 +252,14 @@ npm install grunt-contrib-compass --save-dev /7 For error correction
 
   $ vue init webpack routing // For routing
   ########################## End vue #######################
+
+  ######################### Vue 3 #########################
+
+  $ npm install -g @vue/cli // Installs Vue CLI
+  $ vue create modal-project // or use any other name. Use manually feature. Remove linter and press enter. choose v3. don't save for future projects or do.
+
+  ######################## End Vue 3 ######################
+
 
   $ git branch -a // See invisible branches
   $ $ gitk --all & // Shows git other window
@@ -277,7 +285,175 @@ npm install grunt-contrib-compass --save-dev /7 For error correction
   
   ##############################################
 
+  ####################  node.js express #################
+  
+  $ npm install --save express
+  $ git clone https://github.com/ibm-developer-skills-network/lkpho-Cloud-applications-with-Node.js-and-React.git // Clone new node.js package. Have node installed locally
+  $ cd lkpho-Cloud-applications-with-Node.js-and-React/CD220Labs/ to CD into the main directory
+  $ curl -X POST http://localhost:3333/login/Jason  // For POST rout
+  $ curl localhost:3333 // To ping that particular script.
+  $ node expressAppLevelMiddleware.js // Start a script with server
+  $ curl http://localhost:3333?password=pwd123 // To add values to url
+
+
+  // Inorder to be able to run this server you need to install
+   the express,react,react-dom and express-react-views package by 
+   executing the command below in the terminal.
+
+  $ npm install --save express react react-dom express-react-views 
+  $ node expressTemplate.js
+  $ curl localhost:3333/Jessica
+
+  $ npm install --save-dev nodemon // Install this gto make server run all the time.
+
+  $ npm install --save dotenv ibm-watson  // This express server needs to use the .env for which we have to install the dotenv package
+  ##################### END  #############################
   
 
+
+  ##################### REACT ########################
+
+  $ npx create-react-app todoapp // To create react default package
+  $ npm install // Install any missing module
+  $ npm start
+
+  ######################## END ########################
+
+
+  #####################  CMD NTWK ##############################
+
+  $ netstat -ano show listening and established  processes
+  // Means network statistics
+  $ netstat /?   // For help
+  $ netstat -a // checks all the connections
+  $ netstat -b // checks all the connections to the internet
+  $ netstat -bn // checks all the connections to the internet and port
+  $ netstat -bno // checks all the connections to the internet and port and PID
+  ###################### END ##############################
+
+
+  ################## Cleaning Junk ########################
+
+   WIN + R => type "wsreset" => enter => then push enter
+   WIN + R => type "temp" => delete all
+   WIN + R => type "prefetch" => delete all
+   goto C => Windows => softwaredistribution => download => delete all
+   goto search => type "Disk cleanup" => select what to clean up and push enter also 
+    // clean up system for broken rgistry
+   goto search => type "restor point" => choose C: => configure => delete restore point
+
+   $ ipconfig/flushdns  // To flush DNS cache
+  $ WIN + R => cmd => SHFT+CNTL+ENTER for admin mode
+  $ The at command type.  DISM /Online /Cleanup-Image /ScanHealth
+   WIN + i opens settings. Click the Update & Security option and select Recovery.
+
+  #################### END ################################
+
+  ################### To find virus ########################
+
+  $ cd  // to go to C:/WINDOWS/system32
+  $ attrib  // to check for .inf or .exe file. If any, you have virus
+  // It also checks for READ-ONLY files and with it you can change a file'S accessibility
+
+
+  To delete:
+
+  $ attrib -s -h -r -a -i autorun.inf
+  $ del autorun.inf
+  Then move into system32
+  $ cd win*
+  $ cd system32
+  $ attrib
+  Search for SH or HR by the left wint .inf or .exe
+  ################### END ##################################
+
+
+  ##################### IBM and Services ##########################
+
+  $ npm install --save ibmwatson
+  Goto cloud.ibm.com/login to create a service.
+  Goto catalog => services // Then search for the service
+  Select and choose "Dallas" and lite version for free version.
+  Behold is your key and url.
+  Then after creat .env file and add into it as follows:
+  
+  .env:
+
+  API_KEY=AzRb3tutpZGXs88fS-BOkfROaUM6EGXMraQl7KjqP8ro
+  API_URL=https://api.us-south.natural-language-understanding.watson.cloud.ibm.com/instances/9a922860-f667-4cc3-8732-f848134af409
+
+  after run 
+
+  $ npm install --save dotenv // Install dotenv to use the .env file in the server application using the following command.
+
+  
+  #################### END IBM ############################
+
+
+  #################### Find Keylogger ######################
+  RAT // Remote access trojan
+  $ netstat -ano show listening and established  processes
+  // Means network statistics
+  $ netstat /?   // For help
+  $ netstat -a // checks all the connections
+  $ netstat -b // checks all the connections to the internet
+  $ netstat -bn // checks all the connections to the internet and port
+  $ netstat -bno // checks all the connections to the internet and port and PID
+  $ netstat -b -o 5 // 
+
+  netstat: The netstat is a useful command for checking internet and network connections.
+-b attribute: displays the executable involved in creating each connection or listening port.
+-o attribute: displays the owning process id associated with each connection.
+integer:  An integer used to display results multiple times with specified 
+number of seconds between displays. It continues until stopped by command ctrl+c.
+  
+YOU are looking for autorun.exe or autorun.inf // Those are malicious
+
+
+$ netstat -b -o 5>>sus-mal.txt // Prints the output to file
+
+
+-a	Displays all connections and listening ports
+-b	Displays the executable involved in creating each connection or listening port. (Added in XP SP2.)
+-e	Displays Ethernet statistics
+-f	Displays Fully Qualified Domain Names for foreign addresses. (In Windows Vista/7 only)
+-n	Displays addresses and port numbers in numerical form
+-o	Displays the owning process ID associated with each connection
+-p proto	Shows connections for the protocol specified by proto; proto may be any of: TCP, UDP, TCPv6, or UDPv6.
+-r	Displays the routing table
+-s	Displays per-protocol statistics
+-t	Displays the current connection offload state, (Windows Vista/7)
+-v	When used in conjunction with -b, will display sequence of components involved in
+ creating the connection or listening port for all executables. (Windows XP SP2, SP3)
+
+
+State	Description
+CLOSED	Indicates that the server has received an ACK signal from the client and the connection is closed
+CLOSE_WAIT	Indicates that the server has received the first FIN signal from the client and the connection is in the process of being closed
+ESTABLISHED	Indicates that the server received the SYN signal from the client and the session is established
+FIN_WAIT_1	Indicates that the connection is still active but not currently being used
+FIN_WAIT_2	Indicates that the client just received acknowledgment of the first FIN signal from the server
+LAST_ACK	Indicates that the server is in the process of sending its own FIN signal
+LISTENING	Indicates that the server is ready to accept a connection
+SYN_RECEIVED	Indicates that the server just received a SYN signal from the client
+SYN_SEND	Indicates that this particular connection is open and active
+TIME_WAIT	Indicates that the client recognizes the connection as still active but not currently being used
+  ###################### END ##############################
+
+
+  ######################## Screenshot ########################
+  Goto search and type psr and select Steps Recorder.
+  ######################### END #############################
+
+  ###################### Safe mode Android #################
+    Press hold power button of android and press and hold power of option for safe mode
+    on safe mode you can uninstall sturbon apps
+  ####################### END ############################
+
+
+  ######################### Tools #############################
+  Windump
+  Tshark
+  ######################### END ###############################
   https://sqliteonline.com/   ==> for online sql
 */
