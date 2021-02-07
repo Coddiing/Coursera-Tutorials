@@ -60,7 +60,7 @@ victory/**
  *
  * git config core.editor "notepad++ -multiInst -nosession"
  *
- * git config --global -e
+ * git config --global -e // shows VSC editor
  *
  * alias 'subl= "/c/Program Files/Sublime Text 3/subl.exe"'
  *
@@ -276,6 +276,8 @@ npm install grunt-contrib-compass --save-dev /7 For error correction
 
   $ pip install virtualenvwrapper-win
   $ pip3 install django
+  $ django-admin.py startproject <project-name> // Create project
+  $ python manage.py startapp myapp // Now create your app
   $ python manage.py runserver // Starts python's virtual server
   $ python manage.py makemigrations // Create python table for sessions
   $ python manage.py migrate // Create python table for sessions
@@ -322,13 +324,15 @@ npm install grunt-contrib-compass --save-dev /7 For error correction
 
   #####################  CMD NTWK ##############################
 
-  $ netstat -ano show listening and established  processes
-  // Means network statistics
-  $ netstat /?   // For help
-  $ netstat -a // checks all the connections
-  $ netstat -b // checks all the connections to the internet
-  $ netstat -bn // checks all the connections to the internet and port
-  $ netstat -bno // checks all the connections to the internet and port and PID
+      $ netstat -ano show listening and established  processes
+      // Means network statistics
+      $ netstat /?   // For help
+      $ netstat -a // checks all the connections
+      $ netstat -b // checks all the connections to the internet
+      $ netstat -bn // checks all the connections to the internet and port
+      $ netstat -bno // checks all the connections to the internet and port and PID
+      $ netstat -ln | grep 8080 // Displays protocol statistics and current TCP/IP network connections. 
+      
   ###################### END ##############################
 
 
@@ -386,7 +390,37 @@ npm install grunt-contrib-compass --save-dev /7 For error correction
 
   $ npm install --save dotenv // Install dotenv to use the .env file in the server application using the following command.
 
+  $ ibmcloud login -u email // Sign into IBM cloud with terminal
+
+  // You can enable or disable usage data collection by running 
+  $ ibmcloud config --usage-stats-collect [true | false]
   
+  Release notes: https://github.com/IBM-Cloud/ibm-cloud-cli-release/releases/tag/v1.3.0
+  TIP: use 'ibmcloud config --check-version=false' to disable update check.
+
+  // Find you account details by running the following command.
+  $ ibmcloud account orgs
+
+  Name                   Region     Account owner          Account ID                         Status   
+  uvictory25@gmail.com   us-south   uvictory25@gmail.com   94d390cb7cae45f3a39fb6461bf2b544   active   
+
+
+  The next step is to target CloudFoundry as follows:
+  ibmcloud target --cf-api https://api.REGION.cf.cloud.ibm.com -r REGION -o ACCOUNTOWNER
+
+  You might have to optionally install the cf plugin as follows:
+  $ ibmcloud cf install
+
+  If you are running this code for the first time and you don't have
+   an account space created, run the following command to create an account space. 
+   It has been named senti-analyzer. You can give it any name you want.
+
+  $ ibmcloud account space-create sentiment-analyzer
+
+  We should now set the space that we just created as the target space for our application deployment.
+  $ ibmcloud target -s sentiment-analyzer
+
+  $ ibmcloud app push // Push to IBM cloud
   #################### END IBM ############################
 
 
@@ -454,6 +488,92 @@ TIME_WAIT	Indicates that the client recognizes the connection as still active bu
   ######################### Tools #############################
   Windump
   Tshark
-  ######################### END ###############################
+  malwarebyte
+  emsisoft
+  Suricata : https://www.youtube.com/watch?v=h0FJx-eYkxQ
+
+  search > msconfig // To choose whether to boot computer as safemode
+  Eset: https://www.eset.com/us/home/online-scanner/
+  https://toolslib.net/downloads/finish/64-usb-file-resc/next
+
+  Youtube: https://www.youtube.com/watch?v=NO1-9ZRCXok
+   https://www.malwarebytes.com/
+   https://www.emsisoft.com/en/home/emergencykit/download/
+
+   Browser: https://brave.com/?ref=ful146 // Has trojan!!!
+
+   https://blog.malwarebytes.com/detections/adware-premieropinion/
+
+   search > storage
+
+    D-Frag: Disk optimisation
+   This PC > R-CLCK Windows (c:) > properties > tools > optimise // Make sure 'Media type' says 'Hard disk drive' before proceeding
+   
+   User > codin > App data > Roaming  // There could be a virus there also check Locla/Temp
+
+   mrt /?
+   mrt /f  // This performs full malware removal scan
+
+   Resources:
+    https://www.bleepingcomputer.com/download/junkware-removal-tool/dl/293/
+
+   ######################### END ###############################
+
+  ########################## BUSTED #############################
+  C:\Program Files\Git\usr\bin // Less.exe
+
+  ########################## END ###############################
   https://sqliteonline.com/   ==> for online sql
+
+
+  ######################## Malware ##################################
+  Search Windows security 
+
+  ########################### END ##################################
+
+  ############################### Meeting ###########################
+
+  https://online-leh.re/b/tho-row-1nh-0ym
+
+  ############################### END ###############################
+
+
+  ############################ Block unused ports ############################
+https://www.ghacks.net/2017/05/19/how-to-block-ports-in-windows/
+
+
+  1
+Click "Start | Control Panel | System and Security | Windows Firewall."
+
+2
+Select "Advanced Settings." Click "Inbound Rules" to block an inbound port; click "Outbound Rules" to block an outbound port.
+
+3
+Select "New Rule." Choose "Port" from the options and then click "Next."
+
+4
+Choose "TCP" or "UDP," depending on which protocol the port uses. Click "Specific Local Ports."
+
+5
+Enter the port number or numbers into the available field; separate multiple numbers with a comma (e.g., "80, 20, 443"). Click "Next."
+
+6
+Click "Block the Connection," then "Next." Choose which network location or locations – public, private or domain – the rule applies to and then click "Next."
+
+7
+Create a name for the rule and enter an optional description. Click "Finish" to block the ports on the computer.
+
+############################### END #######################################################################
+
+
+######################### Check apps on my network ###################################
+
+https://www.youtube.com/watch?v=GTZGPa9jE_Y
+
+Call service manager > click performance > WiFi or ethernet > Open Resource Monitor !
+
+
+################################ END ##############################################
+
+
 */
